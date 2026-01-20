@@ -11,7 +11,7 @@ class DataPipeline:
         self.steps = []
 
     # ====== BUILDER ======
-    def WithMaskPolygons(self):
+    def withMaskPolygons(self):
         self.steps.append(MaskToPolygonModule(self.context))
         return self
 

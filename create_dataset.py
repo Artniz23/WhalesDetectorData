@@ -2,8 +2,10 @@ from pipeline.data_pipeline import DataPipeline
 
 pipeline = (
     DataPipeline("dataset", "yolo_dataset")
-    .WithMaskPolygons()
+    .withMaskPolygons()
+    .withAugmentations()
     .withSplitter()
+    .withVisualization()
 )
 
 pipeline.run()
