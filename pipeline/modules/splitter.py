@@ -1,7 +1,6 @@
 import random
 import shutil
 from pathlib import Path
-from typing import List, Tuple
 
 from pipeline.context import PipelineContext
 from pipeline.pipeline import PipelineStep
